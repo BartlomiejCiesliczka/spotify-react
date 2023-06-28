@@ -1,4 +1,4 @@
-import { ListOfDailyMix } from "./listOfDailyMix";
+import { PlaylistSuggestion } from "./playlistSuggestion";
 
 export function DailyMix({playlist}){
 
@@ -11,7 +11,7 @@ export function DailyMix({playlist}){
         <div className='random-playlist-show-all'>Pokaż wszystko</div>
       </div>
       <div className='random-playlist-container'>
-      <ListOfDailyMix playlist={playlist} />
+      <PlaylistSuggestion playlist={playlist} type={"DM"}/>
       </div>
     </section>
   )

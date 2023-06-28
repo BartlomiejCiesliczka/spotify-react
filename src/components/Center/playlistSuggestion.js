@@ -1,6 +1,6 @@
-export function ListOfDailyMix({playlist}){
+export function PlaylistSuggestion({playlist, type}){
   return(
-    playlist.filter((item) => item.type === 'DM').slice(0,5).map((data)=>
+    playlist.filter((item) => item.type === type).slice(0,5).map((data)=>
       <a href={data.link}>
         <div key={data.id} className='random-playlist-playlist'>
           <div className='random-playlist-img'>

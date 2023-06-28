@@ -1,4 +1,4 @@
-import { ListOfPodcast } from "./listOfPodcast";
+import { PlaylistSuggestion } from "./playlistSuggestion";
 
 export function Podcast({playlist}){
 
@@ -11,7 +11,7 @@ export function Podcast({playlist}){
         <div className='random-playlist-show-all'>Pokaż wszystko</div>
       </div>
       <div className='random-playlist-container'>
-      <ListOfPodcast playlist={playlist} />
+      <PlaylistSuggestion playlist={playlist} type={"Podcast"}/>
       </div>
     </section>
   )
