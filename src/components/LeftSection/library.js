@@ -102,6 +102,7 @@ let status=states.podcast
   
 function chooses(value){
   status = states[value]
+  console.log(status)
   return status
 }
 
@@ -112,20 +113,7 @@ function refreshPage() {
   return(
     <div className='library'>
       <LibraryHeader />
-      <div className='library-buttons'>
-        <button className='playlist-btn' onClick={()=> chooses("playlist")}>
-          <span className='playlist-btn-name'>Playlisty</span>
-        </button>
-        <button className='playlist-btn' onClick={()=> chooses("podcast")}>
-          <span className='playlist-btn-name'>Podcasty i programy</span>
-        </button>
-        <button className='playlist-btn' onClick={()=> chooses("all")}>
-        <span className='playlist-btn-name'>Wszystko</span>
-        </button>
-        <button className='playlist-btn' onClick={()=> refreshPage()}>
-        <span className='playlist-btn-name'>odswiez</span>
-        </button>
-      </div>
+      <LibraryButtons states={states} chooses={chooses} refreshPage={refreshPage}/>
       <LibraryPlaylists playlist={playlist} states={states} chooses={chooses} status={status}/>
     </div>
   )
