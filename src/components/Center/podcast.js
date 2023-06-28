@@ -1,4 +1,4 @@
-import { ListOfPodcast } from "./list-of-podcast";
+import { ListOfPodcast } from "./listOfPodcast";
 
 export function Podcast({playlist}){
 

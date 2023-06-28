@@ -1,8 +1,8 @@
 export function ListOfPodcast({playlist}){
   return(
-    playlist.filter((item) => item.type === 'Podcast').slice(0,5).map((data, index)=>
+    playlist.filter((item) => item.type === 'Podcast').slice(0,5).map((data)=>
       <a href={data.link}>
-        <div key={index} className='random-playlist-playlist'>
+        <div key={data.id} className='random-playlist-playlist'>
           <div className='random-playlist-img'>
             <img src={data.image}></img>
           </div>

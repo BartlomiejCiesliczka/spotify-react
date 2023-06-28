@@ -1,11 +1,11 @@
 import { Library } from "./library";
-import { Navibar } from "./sidebar-left-navi";
+import { Navibar } from "./navibar";
 
-export function SidebarLeft(){
+export function SidebarLeft({playlist}){
   return(
     <nav className='sidebar-left'>
       <Navibar />
-      <Library />
+      <Library playlist={playlist}/>
     </nav>
   )
 }

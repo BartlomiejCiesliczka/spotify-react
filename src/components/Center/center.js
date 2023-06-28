@@ -1,7 +1,7 @@
-import { CenterHeader } from './center-header'
-import { LastPlaylists } from './last-playlists'
+import { CenterHeader } from './centerHeader'
+import { LastPlaylists } from './lastPlaylists'
 import { Podcast } from './podcast'
-import { DailyMix } from './daily-mix'
+import { DailyMix } from './dailyMix'
 
 export function Center({playlist}){
 

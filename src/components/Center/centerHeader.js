@@ -1,4 +1,4 @@
-import ProfilePicture from './me.jpg'
+import ProfilePicture from '../../assets/me.jpg'
 
 export function CenterHeader(){
   return(

@@ -1,8 +1,8 @@
-export function LastPlaylist({playlist}){
+export function LastListed({playlist}){
   return(
-    playlist.filter((item, index) => index < 6).map((data, index) =>
+    playlist.slice(0,6).map((data) =>
       <a href={data.link}>
-        <div key={index} className='last-playlist'>
+        <div key={data.id} className='last-playlist'>
           <div className='playlist-photo'>
             <img className='playlist-img' src={data.image}/>
           </div>

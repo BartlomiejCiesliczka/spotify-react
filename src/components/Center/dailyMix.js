@@ -1,4 +1,4 @@
-import { ListOfDailyMix } from "./list-of-Daily-Mix";
+import { ListOfDailyMix } from "./listOfDailyMix";
 
 export function DailyMix({playlist}){
 

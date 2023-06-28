@@ -1,4 +1,4 @@
-import { LastPlaylist } from './last-playlist'
+import { LastListed } from './lastListed'
 
 export function LastPlaylists({playlist}){
 
@@ -6,7 +6,7 @@ export function LastPlaylists({playlist}){
     <section className='last-playlists'>
       <h2 className='last-playlists-greeting'>Dzień Dobry</h2>
       <div className='last-playlist-layout'>
-        <LastPlaylist playlist={playlist}/>
+        <LastListed playlist={playlist}/>
       </div>
     </section>
   )
