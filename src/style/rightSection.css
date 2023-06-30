@@ -1,0 +1,73 @@
+
+.sidebar-right{
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  min-width: 280px;
+  padding: 16px;
+}
+.sidebar-right-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-right-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.close-friendlist-btn{
+  background-color: #121212;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  background-color: transparent
+}
+
+.close-friendlist-btn>img{
+  width: 16px;
+}
+
+.friends-list{
+  padding: 0;
+}
+
+.friend{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
+}
+
+.friend-info{
+  display: flex;
+  gap: 10px;
+}
+
+.friend-photo>img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.friend-activity{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+.friend-name{
+  color: ffffff;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+.friend-time{
+  font-size: 13px;
+  color: #b3b3b3;
+  box-sizing: border-box;
+}

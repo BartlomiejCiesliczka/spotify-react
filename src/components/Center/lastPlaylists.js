@@ -6,7 +6,9 @@ export function LastPlaylists({playlist}){
     <section className='last-playlists'>
       <h2 className='last-playlists-greeting'>Dzień Dobry</h2>
       <div className='last-playlist-layout'>
-        <LastListed playlist={playlist}/>
+      {playlist.slice(0,6).map((data) =>
+        <LastListed key={data.id} data={data}/>
+      )}
       </div>
     </section>
   )

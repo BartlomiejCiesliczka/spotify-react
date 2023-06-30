@@ -1,8 +1,7 @@
-export function LastListed({playlist}){
+export function LastListed({data}){
   return(
-    playlist.slice(0,6).map((data) =>
       <a href={data.link}>
-        <div key={data.id} className='last-playlist'>
+        <div className='last-playlist'>
           <div className='playlist-photo'>
             <img className='playlist-img' src={data.image}/>
           </div>
@@ -15,6 +14,5 @@ export function LastListed({playlist}){
           </div>
         </div>
       </a>
-    )
   )
 }

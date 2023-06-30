@@ -1,0 +1,26 @@
+.header{
+  height: 30px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left-section{
+  max-height: 30px;
+  margin-left: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.header-right-section-btn{
+  background-color: #121212;
+  border: none;
+  cursor: pointer;
+  padding: 5px 12px 3px 12px;
+}
+
+.header-right-section-btn-close:hover{
+  background-color: #ff0000;
+}
+
+.header-right-section-img{
+  width: 15px
+}

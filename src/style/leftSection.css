@@ -1,0 +1,238 @@
+.sidebar-left{
+  display: flex;
+  flex-direction: column;
+  column-gap: 8px;
+  row-gap: 8px;
+  min-width: 300px;
+}
+/* navi-bar */
+
+.navi-bar-ul{
+  background-color: #121212;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.navi-bar-li{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+  text-align: left;
+  color: #b3b3b3;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 4px 12px;
+}
+
+/* playlist's library */
+
+.library{
+  display: flex;
+  flex-direction: column;
+  column-gap: 8px;
+  line-height: 25.6px;
+  color: #b3b3b3;
+  background-color: #121212;
+  border-radius: 8px;
+}
+
+/* playlist's library header */
+
+.library-header{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 8px;
+  padding: 8px 16px;
+}
+
+.library-svg{
+  margin-inline-end: 12px;
+}
+
+.library-header-left-btn{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  min-block-size: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  color: #a7a7a7;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.library-btn{
+  padding: 8px 9.5px;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.library-btn:hover{
+  background-color: #ffffff1a;
+}
+
+/* playlist's library buttons */
+
+.library-buttons{
+  margin: 8px 16px;
+}
+
+.playlist-btn{
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-shrink: 0;
+  margin-right: 8px;
+  max-inline-size: 100%;
+  position: relative;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+  border-radius: 32px;
+  background-color: #ffffff12;
+  font-family: 'CircularSp';
+}
+
+.playlist-btn-name{
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* playlists */
+.library-playlist{
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px 8px;
+  height: 644px;
+  /* i must change it somehow */
+  overflow-y: scroll;
+}
+/* searchbar */
+
+.library-playlist-searchbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px 0px;
+}
+
+.library-playlist-searchbar-megnifier-btn{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.library-playlist-searchbar-megnifier-btn:hover{
+  background-color: #ffffff1a;
+}
+
+.library-playlist-searchbar-last-btn{
+  font-family: 'CircularSp';
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  margin-left: 8px;
+  padding: 0  8px 0 12px;
+  font-size: 13px;
+  background-color: transparent;
+  color: #ffffffb3;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-playlist{
+  margin: 0;
+  padding: 0;
+}
+
+.direct-playlist-layout{
+  display: grid;
+  gap: 8px 12px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1tr auto;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 6px;
+  min-block-size: 56px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.direct-playlist-layout-img{
+  width: 48px;
+  height: 48px;
+}
+
+.direct-playlist-img{
+  object-fit: cover;
+  object-position: center;
+  grid-column: 1/auto;
+  column-gap: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.direct-playlist-layout-text{
+  grid-column-end: -1;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.direct-playlist-layout-text-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  word-break: break-all;
+}
+
+.direct-playlist-name{
+  margin-block: 0;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.direct-playlist-layout-bottom-text{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fav-tracks{
+  width: 12px;
+}
