@@ -1,30 +1,30 @@
-import '../App.css';
-import X from '../assets/X.png'
-import rave from '../assets/rave.jpg'
-import running from '../assets/running.jpg'
-import lata from '../assets/lata.jpg'
-import ross from '../assets/ross.jpg'
-import kry from '../assets/kry.jpg'
-import dz from '../assets/dz.jpg'
-import Coding from '../assets/Coding.jpg'
-import BPF1 from '../assets/BPF1.jpg'
-import DM1 from '../assets/DM1.jpg'
-import DM4 from '../assets/DM4.jpg'
-import DM2 from '../assets/DM2.jpg'
-import DM6 from '../assets/DM6.jpg'
-import DM5 from '../assets/DM5.jpg'
-import DM3 from '../assets/DM3.jpg'
-import impon from '../assets/impon.jpg'
-import LKP from '../assets/LKP.jpg'
-import { SidebarRight } from './RightSection/sidebarRight';
-import { Center } from './Center/center';
-import { Header } from './header';
-import { SidebarLeft } from './LeftSection/sidebarLeft';
-import { useState } from 'react';
+import './style/App.css';
+import X from './assets/X.png'
+import rave from './assets/rave.jpg'
+import running from './assets/running.jpg'
+import lata from './assets/lata.jpg'
+import ross from './assets/ross.jpg'
+import kry from './assets/kry.jpg'
+import dz from './assets/dz.jpg'
+import Coding from './assets/Coding.jpg'
+import BPF1 from './assets/BPF1.jpg'
+import DM1 from './assets/DM1.jpg'
+import DM4 from './assets/DM4.jpg'
+import DM2 from './assets/DM2.jpg'
+import DM6 from './assets/DM6.jpg'
+import DM5 from './assets/DM5.jpg'
+import DM3 from './assets/DM3.jpg'
+import impon from './assets/impon.jpg'
+import LKP from './assets/LKP.jpg'
+import { SidebarRight } from './components/RightSection/sidebarRight';
+import { Center } from './components/Center/center';
+import { Header } from './components/header';
+import { SidebarLeft } from './components/LeftSection/sidebarLeft';
 
 function App() {
 
-  const [playlist, setPlaylist] = useState([
+
+  const playlist = [
     {
       image: lata,
       name: 'Lata 2010-2019 - składanka',
@@ -54,7 +54,8 @@ function App() {
       name: 'Daily Mix 4',
       author: 'Spotify',
       link: 'https://open.spotify.com/playlist/37i9dQZF1E35TAO9pWJDPg',
-      type: 'DM',
+      type: 'Playlist',
+      subtype: 'DM',
       id: crypto.randomUUID()
     },
     {
@@ -62,7 +63,7 @@ function App() {
       name: 'Daily Mix 1',
       author: 'Spotify',
       link: 'https://open.spotify.com/playlist/37i9dQZF1E37jITIOmwvPg',
-      type: 'DM',
+      type: ['DM', 'Playlist'],
       id: crypto.randomUUID()
     },
     {
@@ -110,7 +111,7 @@ function App() {
       name: 'Daily Mix 2',
       author: 'Spotify',
       link: 'https://open.spotify.com/playlist/37i9dQZF1E39aNKAqz3BBH',
-      type: 'DM',
+      type: ['DM', 'Playlist'],
       id: crypto.randomUUID()
     },
     {
@@ -118,7 +119,7 @@ function App() {
       name: 'Daily Mix 3',
       author: 'Spotify',
       link: 'https://open.spotify.com/playlist/37i9dQZF1E380rw76kNYOT',
-      type: 'DM',
+      type: ['DM', 'Playlist'],
       id: crypto.randomUUID()
     },
     {
@@ -126,7 +127,7 @@ function App() {
       name: 'Daily Mix 5',
       author: 'Spotify',
       link: 'https://open.spotify.com/playlist/37i9dQZF1E39q9m64nFF9U',
-      type: ['Playlist', 'DM',],
+      type: ['DM', 'Playlist'],
       id: crypto.randomUUID()
     },
     {
@@ -135,7 +136,7 @@ function App() {
       author: 'Spotify',
       link: 'https://open.spotify.com/playlist/37i9dQZF1E356SC6LyPRMP', 
       type: 'Playlist',
-      type: 'DM',
+      type: ['DM', 'Playlist'],
       id: crypto.randomUUID()
     },
     {
@@ -154,13 +155,7 @@ function App() {
       type: 'Playlist',
       id: crypto.randomUUID()
     },
-  ])
-
-  function choose(type){
-    setPlaylist(currentPlaylist =>{
-      return currentPlaylist.filter(item => item.type === type)
-    })
-  }
+  ]
 
 
   return (
@@ -176,3 +171,6 @@ function App() {
 }
 
 export default App;
+
+
+// this is toComment branch

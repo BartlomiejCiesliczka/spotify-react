@@ -1,4 +1,4 @@
-import { ListOfDailyMix } from "./listOfDailyMix";
+import { PlaylistSuggestion } from "./playlistSuggestion";
 
 export function DailyMix({playlist}){
 
@@ -11,8 +11,12 @@ export function DailyMix({playlist}){
         <div className='random-playlist-show-all'>Pokaż wszystko</div>
       </div>
       <div className='random-playlist-container'>
-      <ListOfDailyMix playlist={playlist} />
+      {playlist.filter((data) => data.subtype === "DM").slice(0,5).map((data)=>
+        <PlaylistSuggestion key={data.id} data={data}/>
+      )}
       </div>
     </section>
   )
 }
+
+

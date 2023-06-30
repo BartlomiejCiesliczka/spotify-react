@@ -1,3 +1,4 @@
+import './../../style/center.css'
 import { CenterHeader } from './centerHeader'
 import { LastPlaylists } from './lastPlaylists'
 import { Podcast } from './podcast'

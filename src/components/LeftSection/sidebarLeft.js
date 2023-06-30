@@ -1,3 +1,4 @@
+import './../../style/leftSection.css'
 import { Library } from "./library";
 import { Navibar } from "./navibar";
 

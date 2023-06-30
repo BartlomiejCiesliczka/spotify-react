@@ -1,0 +1,31 @@
+*{
+  font-family: 'Roboto';
+}
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+main{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 8px;
+  column-gap: 8px;
+  row-gap: 8px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+path{
+  fill: #a7a7a7;
+}
+path:hover{
+  fill: #ffffff;
+}
+g{
+  fill: #a7a7a7;
+}
